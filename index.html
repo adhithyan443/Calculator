@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div class="cal-body mt-3">
+        <div class="cal-screen">
+            <div class="cal-display">
+                <input type="text" id="result">
+            </div>
+        </div>
+        <div class="cal-button-row">
+            <button class="btn-number" onclick="displayNumber(7)">7</button>
+            <button class="btn-number"onclick="displayNumber(8)">8</button>
+            <button class="btn-number"onclick="displayNumber(9)">9</button>
+            <button class="btn-operator" onclick="displayNumber('*')">X</button>
+            <button class="btn-number"onclick="displayNumber(4)">4</button>
+            <button class="btn-number"onclick="displayNumber(5)">5</button>
+            <button class="btn-number"onclick="displayNumber(6)">6</button>
+            <button class="btn-operator" onclick="displayNumber('-')">-</button>
+            <button class="btn-number"onclick="displayNumber(1)">1</button>
+            <button class="btn-number"onclick="displayNumber(2)">2</button>
+            <button class="btn-number"onclick="displayNumber(3)">3</button>
+            <button class="btn-operator" onclick="displayNumber('+')">+</button>
+            <button class="btn-number"onclick="displayNumber(00)">00</button>
+            <button class="btn-number"onclick="displayNumber(0)">0</button>
+            <button class="btn-number" onclick="displayNumber('.')">.</button>
+            <button class="btn-operator"onclick="displayNumber('/')">/</button>
+            <button class="btn-special" onclick="clearBox()">AC</button>
+            <button class="btn-special" onclick="removeLast()">CLR</button>
+            <button class="btn-special" onclick="evlExp()">=</button>
+        </div>
+    </div>
+</body>
+
+</html>
